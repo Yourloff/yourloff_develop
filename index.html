@@ -1,11 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="feedback-container">
+      <div>Обратная связь</div>
+      <div class="feedback-form">
+        <label for="name">Имя</label>
+        <input type="text" id="name" class="form-input" />
+      </div>
+      <div class="feedback-form">
+        <label for="email">Электронная почта</label>
+        <input type="text" id="email" class="form-input" />
+      </div>
+      <div class="feedback-form">
+        <label for="service">Услуга</label>
+        <select class="form-input">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+      <div class="feedback-form">
+        <label for="feedback-message">Сообщение</label>
+        <input type="text" id="feedback-message" class="form-input" />
+      </div>
+      <div class="send-feedback">Отправить</div>
+    </div>
   </body>
 </html>
