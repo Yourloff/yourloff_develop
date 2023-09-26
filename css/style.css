@@ -1,11 +1,16 @@
 body {
-  margin: 0 auto;
   font-family: Nunito;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 :root {
   --logo-label-color: #4445eb;
-  --sign-in-btn-color: #377dff;
+  --basic-blue: #377dff;
+  --grey-text: #53586E;
 }
 
 header {
@@ -49,14 +54,55 @@ header .header-center span {
 }
 
 header .sign-in-button span {
-  border: 1px solid var(--sign-in-btn-color);
-  color: var(--sign-in-btn-color);
+  border: 1px solid var(--basic-blue);
+  color: var(--basic-blue);
   padding: 12px 50px;
   border-radius: 24px;
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
   letter-spacing: 0.16px;
+}
+
+.service-container {
+  margin-top: 85px;
+}
+
+.service-item {
+  display: flex;
+  gap: 120px;
+  padding-bottom: 85px;
+}
+
+.service-image {
+  width: 50%;
+}
+
+.service-image img {
+  width: 100%;
+}
+
+.service-text {
+  width: 50%;
+}
+
+.service-text p {
+  color: var(--grey-text);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.service-text h2 {
+  color: var(--basic-blue);
+  margin: 0;
+  font-family: Nunito;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .feedback-container {
