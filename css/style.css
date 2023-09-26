@@ -96,7 +96,8 @@ header .sign-in-button span {
   line-height: 25px;
 }
 
-.service-text h2 {
+.service-text h2 a {
+  text-decoration: none;
   color: var(--basic-blue);
   margin: 0;
   font-family: Nunito;
@@ -104,6 +105,15 @@ header .sign-in-button span {
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.link-service {
+  text-decoration: underline 0.20em #fff;
+  transition: text-decoration-color 200ms;
+}
+
+.link-service:hover {
+  text-decoration-color: var(--basic-blue);
 }
 
 .feedback-container {
